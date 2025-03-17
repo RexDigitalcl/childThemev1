@@ -2,6 +2,12 @@
  * Admin Style
  */
 
+
+ #wpwrap {
+    display: grid;
+    
+ }
+
  body {
     width: 300px !important;
  }
