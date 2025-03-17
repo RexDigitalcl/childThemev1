@@ -1,3 +1,7 @@
 /**
  * Admin Style
  */
+
+ body {
+    width: 300px !important;
+ }
