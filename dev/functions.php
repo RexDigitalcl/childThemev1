@@ -1,49 +1,9 @@
 <?php
-/**
- * Theme functions and definitions.
- *
- * @package Rexdigital
- */
-
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
 
-define( 'REXDIGITAL_VERSION', '1.0.0' );
-
-/**
- * Load admin scripts & styles.
- *
- * @return void
- */
-function rexdigital_admin_scripts_styles() {
-
-    wp_enqueue_style(
-        'rexdigital-admin-style',
-        get_stylesheet_directory_uri() . '/assets/css/admin-styles.css',
-        [],
-        REXDIGITAL_VERSION
-    );
-
+function rexdigital_enqueue_styles() {
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
-add_action( 'admin_enqueue_scripts', 'rexdigital_admin_scripts_styles' );
-
-/**
- * Load child theme scripts & styles.
- *
- * @return void
- */
-function rexdigital_scripts_styles() {
-
-    wp_enqueue_style(
-        'rexdigital-style',
-        get_stylesheet_directory_uri() . 'style.css',
-        [
-            'hello-elementor-theme-style',
-        ],
-        REXDIGITAL_VERSION
-    );
-
-}
-add_action( 'wp_enqueue_scripts', 'rexdigital_scripts_styles', 20 );
-?>
+add_action( 'wp_enqueue_scripts', 'rexdigital_enqueue_styles' );
