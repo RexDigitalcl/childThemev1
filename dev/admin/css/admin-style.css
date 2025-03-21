@@ -2,6 +2,10 @@
  * Admin Style
  */
 
+
+ #wpadminbar {
+   display: none;
+}
 header#site-header {
    display: none;
 }
