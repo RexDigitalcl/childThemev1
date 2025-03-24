@@ -12,6 +12,8 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 
 /* Add your custom styles here */
 
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Quicksand:wght@300..700&display=swap');
 
 /* variables */
 :root {
@@ -35,12 +37,12 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     /** #4d5254 */
     --thirdColor-transparent: color-mix(in srgb, var(--thirdColor), transparent 20%);
 
-
 	/** typografy */
-	--fontH: 'Roboto', sans-serif;
-	--fontP: 'Montserrat', sans-serif;
+	--fontH: 'Londrina Solid', sans-serif;
+	--fontP: 'QuickSand', sans-serif;
+
 	/** Background svg */
-	
+
 
 	/**  */
 
