@@ -18,8 +18,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 
     --firstColor: #2ECC71;
     --firstColor-dark: color-mix(in srgb, var(--firstColor), black 15%);/** #27ad60 */
-    --firstColor-light: color-mix(in srgb, var(--firstColor), white 15%);
-    /** #4dd486 */
+    --firstColor-light: color-mix(in srgb, var(--firstColor), white 15%);/** #4dd486 */
     --firstColor-transparent: color-mix(in srgb, var(--firstColor), transparent 20%);
 
     --secondColor: #4B0082;
@@ -35,5 +34,13 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     --thirdColor-light: color-mix(in srgb, var(--thirdColor), white 15%);
     /** #4d5254 */
     --thirdColor-transparent: color-mix(in srgb, var(--thirdColor), transparent 20%);
+
+
+	/** typografy */
+	--fontH: 'Roboto', sans-serif;
+	--fontP: 'Montserrat', sans-serif;
+	/** Background svg */
+
+	/**  */
 
 }
