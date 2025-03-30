@@ -15,26 +15,30 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 /* import */
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Quicksand:wght@300..700&display=swap');
 
+
+/* reset */
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 /* variables */
 :root {
 
     --firstColor: #2ECC71;
-    --firstColor-dark: color-mix(in srgb, var(--firstColor), black 15%);/** #27ad60 */
-    --firstColor-light: color-mix(in srgb, var(--firstColor), white 15%);/** #4dd486 */
+    --firstColor-dark: color-mix(in srgb, var(--firstColor), black 15%);/* #27ad60 */
+    --firstColor-light: color-mix(in srgb, var(--firstColor), white 15%);/* #4dd486 */
     --firstColor-transparent: color-mix(in srgb, var(--firstColor), transparent 20%);
 
     --secondColor: #4B0082;
-    --secondColor-dark: color-mix(in srgb, var(--secondColor), black 15%);
-    /** #40006f */
-    --secondColor-light: color-mix(in srgb, var(--secondColor), white 15%);
-    /** #662695 */
+    --secondColor-dark: color-mix(in srgb, var(--secondColor), black 15%);/* #40006f */
+    --secondColor-light: color-mix(in srgb, var(--secondColor), white 15%);/* #662695 */
     --secondColor-transparent: color-mix(in srgb, var(--secondColor), transparent 20%);
 
     --thirdColor: #2d3436;
-    --thirdColor-dark: color-mix(in srgb, var(--thirdColor), black 15%);
-    /** #262b2d */
-    --thirdColor-light: color-mix(in srgb, var(--thirdColor), white 15%);
-    /** #4d5254 */
+    --thirdColor-dark: color-mix(in srgb, var(--thirdColor), black 15%);/* #262b2d */
+    --thirdColor-light: color-mix(in srgb, var(--thirdColor), white 15%);/* #4d5254 */
     --thirdColor-transparent: color-mix(in srgb, var(--thirdColor), transparent 20%);
 
 	/** typografy */
@@ -47,3 +51,4 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 	/**  */
 
 }
+
